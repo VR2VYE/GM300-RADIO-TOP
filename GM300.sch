@@ -1,0 +1,266 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bh7njf
+LIBS:GM300-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x02 J7
+U 1 1 59DC8F31
+P 6480 3205
+F 0 "J7" H 6480 3305 50  0000 C CNN
+F 1 "12V For power on" H 6480 3005 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6480 3205 50  0001 C CNN
+F 3 "" H 6480 3205 50  0001 C CNN
+	1    6480 3205
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x04_Odd_Even J6
+U 1 1 59DC8FAA
+P 5580 4270
+F 0 "J6" H 5630 4470 50  0000 C CNN
+F 1 "Testing" H 5630 3970 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 5580 4270 50  0001 C CNN
+F 3 "" H 5580 4270 50  0001 C CNN
+	1    5580 4270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 59DC8FE6
+P 4430 3210
+F 0 "J4" H 4430 3310 50  0000 C CNN
+F 1 "RSSI" H 4430 3010 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4430 3210 50  0001 C CNN
+F 3 "" H 4430 3210 50  0001 C CNN
+	1    4430 3210
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J5
+U 1 1 59DC916D
+P 5570 3205
+F 0 "J5" H 5620 3605 50  0000 C CNN
+F 1 "Motorola" H 5620 2705 50  0000 C CNN
+F 2 "bh7njf_mod:Pin_Header_Straight_2x08_Pitch2.54mm_SMD" H 5570 3205 50  0001 C CNN
+F 3 "" H 5570 3205 50  0001 C CNN
+	1    5570 3205
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 59DC9617
+P 6215 3485
+F 0 "#PWR01" H 6215 3235 50  0001 C CNN
+F 1 "GND" H 6215 3335 50  0000 C CNN
+F 2 "" H 6215 3485 50  0001 C CNN
+F 3 "" H 6215 3485 50  0001 C CNN
+	1    6215 3485
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 59DC9641
+P 6100 4710
+F 0 "#PWR02" H 6100 4460 50  0001 C CNN
+F 1 "GND" H 6100 4560 50  0000 C CNN
+F 2 "" H 6100 4710 50  0001 C CNN
+F 3 "" H 6100 4710 50  0001 C CNN
+	1    6100 4710
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59DC9664
+P 2820 3720
+F 0 "#PWR03" H 2820 3470 50  0001 C CNN
+F 1 "GND" H 2820 3570 50  0000 C CNN
+F 2 "" H 2820 3720 50  0001 C CNN
+F 3 "" H 2820 3720 50  0001 C CNN
+	1    2820 3720
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59DC9687
+P 4170 4470
+F 0 "#PWR04" H 4170 4220 50  0001 C CNN
+F 1 "GND" H 4170 4320 50  0000 C CNN
+F 2 "" H 4170 4470 50  0001 C CNN
+F 3 "" H 4170 4470 50  0001 C CNN
+	1    4170 4470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6280 3305 5870 3305
+Wire Wire Line
+	6280 3205 6215 3205
+Wire Wire Line
+	6215 3205 6215 3485
+Wire Wire Line
+	5880 4170 6100 4170
+Wire Wire Line
+	6100 4170 6100 4710
+Wire Wire Line
+	5880 4470 6100 4470
+Connection ~ 6100 4470
+Wire Wire Line
+	5880 4370 6100 4370
+Connection ~ 6100 4370
+Wire Wire Line
+	5880 4270 6100 4270
+Connection ~ 6100 4270
+Wire Wire Line
+	3925 4335 4170 4335
+Wire Wire Line
+	4170 4335 4170 4470
+Wire Wire Line
+	3775 4475 3775 4750
+Wire Wire Line
+	5380 4470 5030 4470
+Wire Wire Line
+	5030 4750 5030 3405
+Wire Wire Line
+	5030 3405 5370 3405
+Connection ~ 5030 4470
+$Comp
+L Mini-DIN-6 J1
+U 1 1 59DC9D81
+P 3400 3335
+F 0 "J1" H 3400 3585 50  0000 C CNN
+F 1 "To interface" H 3400 3085 50  0000 C CNN
+F 2 "bh7njf_mod:ps2" H 3400 3335 50  0001 C CNN
+F 3 "" H 3400 3335 50  0001 C CNN
+	1    3400 3335
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5870 3205 6045 3205
+Wire Wire Line
+	6045 3205 6045 2570
+Wire Wire Line
+	6045 2570 2920 2570
+Wire Wire Line
+	2920 2570 2920 3990
+Wire Wire Line
+	2920 3235 3100 3235
+Wire Wire Line
+	5380 4270 4775 4270
+Wire Wire Line
+	4775 4270 4775 3990
+Wire Wire Line
+	4775 3990 2920 3990
+Connection ~ 2920 3235
+Wire Wire Line
+	3100 3435 2820 3435
+Wire Wire Line
+	2820 3435 2820 3720
+Wire Wire Line
+	5370 3205 4875 3205
+Wire Wire Line
+	4875 3205 4875 3680
+Wire Wire Line
+	4875 3680 2820 3680
+Connection ~ 2820 3680
+Wire Wire Line
+	3100 3335 3025 3335
+Wire Wire Line
+	3025 3335 3025 4335
+Wire Wire Line
+	3025 4335 3625 4335
+Wire Wire Line
+	3700 3235 3790 3235
+Wire Wire Line
+	3790 3235 3790 2895
+Wire Wire Line
+	3790 2895 4330 2895
+Wire Wire Line
+	4330 2895 4330 3010
+Wire Wire Line
+	4430 3010 4430 2965
+Wire Wire Line
+	4430 2965 5170 2965
+Wire Wire Line
+	5170 2965 5170 3605
+Wire Wire Line
+	5170 3605 5370 3605
+Wire Wire Line
+	5370 3005 4715 3005
+Wire Wire Line
+	4715 3005 4715 3335
+Wire Wire Line
+	4715 3335 3700 3335
+Wire Wire Line
+	3700 3435 4810 3435
+Wire Wire Line
+	4810 3435 4810 3105
+Wire Wire Line
+	4810 3105 5370 3105
+Wire Wire Line
+	5380 4170 5260 4170
+Wire Wire Line
+	5260 4170 5260 3005
+Connection ~ 5260 3005
+Wire Wire Line
+	5380 4370 5095 4370
+Wire Wire Line
+	5095 4370 5095 3105
+Connection ~ 5095 3105
+$Comp
+L W W1
+U 1 1 59DCAAE1
+P 3775 4335
+F 0 "W1" V 3855 4335 50  0000 C CNN
+F 1 "W" V 3775 4335 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Vishay_T73YP_Horizontal" V 3705 4335 50  0001 C CNN
+F 3 "" H 3775 4335 50  0001 C CNN
+	1    3775 4335
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3775 4750 5030 4750
+$EndSCHEMATC
